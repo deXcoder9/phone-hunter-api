@@ -37,6 +37,38 @@
       <div id="loadingCOntainer" class="hidden text-center my-[40vh]">
         <span class="loading loading-bars loading-lg"></span>
       </div>
+      <!-- modal -->
+      <!-- You can open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="my_modal_3.showModal()">open modal</button> -->
+      <dialog id="phoneDetails" class="modal">
+        <div class="modal-box">
+          <form method="dialog">
+            <button
+              class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+            >
+              ✕
+            </button>
+          </form>
+          <div id="Phone__details" class="">
+            <div class="flex flex-col justify-center items-center">
+              <img
+                src="https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg"
+                alt=""
+              />
+            </div>
+            <h3 class="font-bold text-lg">Hello!</h3>
+            <p class="py-4"><b>Storage :</b></p>
+            <p class="py-4"><b>Display Size :</b></p>
+            <p class="py-4"><b>Chipset :</b></p>
+            <p class="py-4"><b>Memory :</b></p>
+            <p class="py-4"><b>Slug :</b></p>
+            <p class="py-4"><b>Release data :</b></p>
+            <p class="py-4"><b>Brand :</b></p>
+            <p class="py-4"><b>GPS :</b></p>
+          </div>
+        </div>
+      </dialog>
+      <!-- ---------------- -->
       <div
         id="phoone_container"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center"
