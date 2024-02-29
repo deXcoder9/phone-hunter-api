@@ -94,14 +94,22 @@ const showDetails = async (id) => {
               />
             </div>
             <h3 class="font-bold text-[25px] pt-2 pb-5">${details.name}</h3>
-            <p class="py-2"><b>Storage:</b> ${details.mainFeatures.storage}</p>
-            <p class="py-2"><b>Display Size:</b> ${details.mainFeatures.displaySize}  </p>
-            <p class="py-2"><b>Chipset:</b> ${details.mainFeatures.chipSet}</p>
-            <p class="py-2"><b>Memory:</b> ${details.mainFeatures.memory}</p>
-            <p class="py-2"><b>Slug:</b> ${details.slug}</p>
-            <p class="py-2"><b>Release data:</b> ${details.releaseDate}</p>
-            <p class="py-2"><b>Brand:</b> ${details.brand}</p>
-            <p class="py-2"><b>GPS:</b> ${details.others.GPS}</p>
+            <p class="py-2"><b>Storage:</b> ${
+              details?.mainFeatures?.storage
+            }</p>
+            <p class="py-2"><b>Display Size:</b> ${
+              details?.mainFeatures?.displaySize
+            }  </p>
+            <p class="py-2"><b>Chipset:</b> ${
+              details?.mainFeatures?.chipSet
+            }</p>
+            <p class="py-2"><b>Memory:</b> ${details?.mainFeatures?.memory}</p>
+            <p class="py-2"><b>Slug:</b> ${details?.slug}</p>
+            <p class="py-2"><b>Release data:</b> ${
+              details?.releaseDate || "N0! Release Date"
+            }</p>
+            <p class="py-2"><b>Brand:</b> ${details?.brand}</p>
+            <p class="py-2"><b>GPS:</b> ${details?.others?.GPS}</p>
           </div> 
   
   `;
